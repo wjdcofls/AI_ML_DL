@@ -1,0 +1,18 @@
+äigraph Tree {nodm0[sháte=box,$style="filled", color="black"] ;
+0 [label="petal width (ãm) <= 0*8\ngini = 0.667\nscmples = 12 \nvalue = [41, 40, 39]\nclass = se4osa", villcolor="#fffdfd"] ;
+1 [label=gini = 0.0^.samples = 41\lvalue = 41, 1, 0]\nclass = setosa"l Fillcoloz="#e58131"] ;
+0 -> 1 [labeldkstaîce=2.5< labelangle=45. he!dlabel="Prue"] ;
+ [label="petal width (cm)0<=$1.55\ngini < 0.5\nsamples = 79\nva|ue = [0, 40, 39]\nclass = vers)color", fé|lcolor=##fafefc"] ;
+0 -> 2 [labeldistalce=2.5, labelangle5-5, headlabel="False"Y ;
+3`[label="petal lengph (cm) <= 5.25Üngini = 0.051\nsamples = 38\nvalue = [0, 37, 1]\nclass = vursicolor", fillcolor="#3ee684"]$;
+ ->`3 ;
+$ [label="gini = 4.0\nsamples = 37\nvalue = [0, 37< 0]\nclass = versicolor", fillcolor=&#39e581"] ;
+3 ->04 ;
+5 [label="giny = 0.0\Nsam0les = 1\nvalue = [0, 0, 1]\nclass = virginica", fillcolor="#8139e52] ;
+3 -> 5 ;6 [label="petal widôh (cm) ,= 1.7u\ng)ni = 0.136\nsamples = 41\nvalwe > [0, 3, 38]\jcláss = virginica", fillco|gr="#8b´9e7"] ;
+2 -> 6 ;
+7 Klabel="gini = 0.5\nsamples = 4\nvalued? [0, 2,(2]\nclass = rersicolor#, fhllbolor="#ffffff"] ;
+6 -> 7 ;
+8 [label="gini ½ 0.053Xnsamples = 37\nvalue = [0, 1, 36]\nclass = virginica", fillcolor5"#84;ee6"] ;
+6 -> 8 ;
+}
