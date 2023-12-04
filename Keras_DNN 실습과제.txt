@@ -1,0 +1,58 @@
+* Keras DNN 실습과제
+
+
+[1] Boston 주택 가격 회귀 예측 모델을 Kears로  2층 신경망모델을 구현하여 MSE를 구하고 
+   3층신경망 모델과 비교하여 보세요. 2층보다 3층이 MSE가 낮아지도록 구현한다
+   하나의 소스에 2층과 3층 두개 모델을 구현하여 MSE를비교하여 보세요. 학습 결과 시각화도 구현한다
+   
+* 파라메터 설정 예시
+[2층 신경망]
+  첫번째 층 출력 : [None,20],   활성화 함수 : 'relu', 
+  optimizer='adam', loss: 'mean_squared_error'
+   학습 epoch : 700
+
+[3층 신경망]
+  첫번째 층 출력 : [Non,20],   활성화 함수 : 'relu', 
+  두번째 층 출력 : [Non,10],   활성화 함수 : 'relu', 
+  optimizer='adam', loss: 'mean_squared_error' (=mse)
+  학습 epoch : 700
+
+
+
+[2] Caesarian(제왕절개) Logistic Regression 모델을  Kears로  2층 신경망모델을 구현하여
+   Accuracy를 구하고 3층신경망 모델과 비교하여 보세요. 2층보다 3층이 Accuracy가 높아지도록
+   구현한다 하나의 소스에 2층과 3층 두개 모델을 구현하여 Accuracy를비교하여 보세요.학습 결과 시각화도 구현
+* 파라메터 설정 예시
+[2층 신경망]
+  첫번째 층 출력 : [None,20],   활성화 함수 : 'relu', metrics:['accuracy']
+  optimizer='adam', loss: 'binary_crossentropy'
+   학습 epoch : 700
+
+[3층 신경망]
+  첫번째 층 출력 : [Non,20],   활성화 함수 : 'relu', 
+  두번째 층 출력 : [Non,2],   활성화 함수 : 'relu', 
+  optimizer='adam', loss: 'binary_crossentropy', metrics:['accuracy']
+  학습 epoch : 700
+
+
+
+[3] iris 데이터 셋을 사용하여 Multi-Classification 모델을 Kears로  2층 신경망모델을 구현하여
+    Accuracy를 구하고 3층신경망 모델과 비교하여 보세요.
+   하나의 소스에 2층과 3층 두개 모델을 구현하여 Accuracy를비교하여 보세요. 학습 결과 시각화도 구현한다
+   (iris는 데이터 특성상 정확도는 2층 3층 모두 1.0임)
+
+* 파라메터 설정 예시
+[2층 신경망]
+  첫번째 층 출력 : [None,20],   활성화 함수 : 'relu', 
+  optimizer='adam', loss: 'categorical_crossentropy', metrics:['accuracy']
+   학습 epoch : 700
+
+[3층 신경망]
+  첫번째 층 출력 : [Non,40],   활성화 함수 : 'relu', 
+  두번째 층 출력 : [Non,20],   활성화 함수 : 'relu', 
+  optimizer='adam', loss: 'categorical_crossentropy', metrics:['accuracy']
+  학습 epoch : 700
+
+[one-hot 인코딩]
+y_train = tf.keras.utils.to_categorical(y_train, num_classes=3)
+y_test = tf.keras.utils.to_categorical(y_test, num_classes=3)
